@@ -19,8 +19,10 @@ export default function Button({
     white: "bg-(--white) text-(--primary)",
   };
 
+  // Shared styles applied to both links and buttons
   const className = `flex items-center justify-center rounded font-semibold px-5.5 py-[11.5px] text-[14px] md:text-[18px] md:gap-2 md:h-12 md:px-6 md:py-[10.5px] ${variantStyles[variant]}`;
 
+  // Render an anchor when an href is provided
   if (href) {
     return (
       <a href={href} className={className}>
@@ -29,6 +31,7 @@ export default function Button({
     );
   }
 
+  // Otherwise, render a button element
   return (
     <button type={type} className={className}>
       {children}
