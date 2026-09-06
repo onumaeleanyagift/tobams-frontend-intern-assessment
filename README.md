@@ -1,36 +1,269 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tobams Group Training and Development Website
+
+A responsive implementation of the Tobams Group Training and Development website based on the provided Figma design.
+
+## Overview
+
+This project recreates the provided design for desktop and mobile screens using Next.js, React, TypeScript, and Tailwind CSS.
+
+The implementation includes:
+
+- Responsive navigation
+- Hero section
+- Training and Development services
+- Learning Management System section
+- Responsive images
+- Reusable button component
+- Desktop and mobile layouts
+- Lucide icons
+- Custom design colors and spacing
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Lucide React
+
+## Features
+
+### Responsive Navbar
+
+- Tobams Group logo
+- Desktop navigation links
+- Account button
+- Take Assessment button
+- Mobile menu button
+- Fixed positioning
+- Responsive typography and spacing
+
+### Hero Section
+
+- Responsive background image
+- Dark image overlay
+- Desktop and mobile headings
+- Supporting description
+- Book a Consultation CTA
+
+### Training Services
+
+The page includes:
+
+- Corporate Trainings
+- Personalised Individual Training
+- Capacity Development
+
+Each service includes:
+
+- Title
+- Description
+- Training areas
+- Responsive image
+- Different image dimensions and border radii based on the design
+
+The second service reverses the text and image positions on desktop to match the provided design.
+
+On mobile, the content follows:
+
+```text
+Title
+Image
+Description
+Training areas
+```
+
+### Learning Management System
+
+The section introduces TG Academy and includes:
+
+- Academy description
+- Course list
+- Responsive image
+- Learn More CTA
+
+Courses displayed include:
+
+- Business Analysis
+- Design Thinking
+- Effective Communication
+- Entrepreneurship
+- Career Development
+- Business Model
+
+## Project Structure
+
+```text
+app/
+├── favicon.ico
+├── globals.css
+├── layout.tsx
+└── page.tsx
+
+components/
+├── layout/
+│   ├── Footer.tsx
+│   └── Navbar.tsx
+├── sections/
+│   ├── Hero.tsx
+│   ├── LearningManagement.tsx
+│   └── TrainingServices.tsx
+└── ui/
+    └── Button.tsx
+
+public/
+└── images/
+    ├── Logo.svg
+    ├── hero.jpg
+    ├── learning-management.jpg
+    ├── corporate-training.jpg
+    ├── individual-training.jpg
+    ├── capacity-development.jpg
+    ├── management-development.jpg
+    └── transformation-hub.jpg
+```
+
+## Reusable Button Component
+
+The project includes a reusable `Button` component.
+
+It supports:
+
+- Primary variant
+- Pink variant
+- White variant
+- Link buttons
+- Submit buttons
+
+Example:
+
+```tsx
+<Button href="#consultation">Book a Consultation</Button>
+```
+
+## Styling
+
+The project uses CSS variables for the main design colors.
+
+```css
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --primary: #571244;
+  --primary-dark: #2c0922;
+  --secondary: #ef4353;
+  --main-text: #151515;
+  --subdued: #696969;
+  --footer: #11040e;
+}
+```
+
+## Responsive Design
+
+The website supports the two required layouts:
+
+- Mobile
+- Desktop
+
+Tailwind responsive utilities control layout, typography, spacing, image sizes, navigation, and content positioning.
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+### 2. Move into the project directory
+
+```bash
+cd <project-folder>
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the application at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Production Build
 
-## Learn More
+Create a production build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Start the production server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm start
+```
 
-## Deploy on Vercel
+## Design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Figma Design:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[Figma URL](https://www.figma.com/design/wuqCLkK1feTgB6xxSRRwZu/Frontend-Intern-Assessment?node-id=1-1404&t=cHv6xTBj9mzTd76w-0)
+
+## Live Website
+
+[Live Deployment URL](https://tobams-frontend-intern-assessment-gamma.vercel.app/)
+
+## GitHub Repository
+
+[GitHub Repository URL](https://github.com/onumaeleanyagift/tobams-frontend-intern-assessment)
+
+## Design Decisions
+
+- Used reusable components for repeated UI elements.
+- Used a data-driven approach for the training service sections.
+- Used responsive Tailwind classes for mobile and desktop layouts.
+- Used Next.js `Image` for image optimisation.
+- Used Lucide React for interface icons.
+- Used CSS variables for the main design colors.
+- Used separate mobile and desktop image placements where the design required different content ordering.
+
+## Technical Assumptions
+
+- The assessment focuses on the provided desktop and mobile designs.
+- Navigation links currently point to page sections.
+- The mobile menu button provides the visual interface but does not include a menu interaction unless required by the assessment.
+- Account and assessment actions use the provided button component.
+- Content and images come from the supplied design assets.
+
+## Known Issues
+
+- Some navigation and CTA links currently point to placeholder section IDs.
+- Interactive functionality such as the mobile navigation menu is not implemented unless required by the assessment.
+
+## AI Use Disclosure
+
+AI tools were used as a development support tool during the implementation.
+
+They assisted with:
+
+- Code explanations
+- Debugging
+- Component structure
+- Tailwind CSS guidance
+- README documentation
+
+The final implementation was reviewed and adjusted manually to match the provided design.
+
+## License
+
+This project was created for assessment purposes.
