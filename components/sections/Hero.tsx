@@ -14,8 +14,8 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-(--black)/70" />
 
-      <div className="relative z-10 flex flex-col text-center items-center text-(--background) max-w-full md:h-full md:gap-3 md:px-4">
-        <span className=" rounded-full bg-(--background)/10 px-8 py-2 text-[12px] mb-2 md:text-[14px] lg:mb-4">
+      <div className="relative z-10 flex flex-col text-center items-center text-(--white) max-w-full md:h-full md:gap-3 md:px-4">
+        <span className=" rounded-full bg-(--white)/10 px-8 py-2 text-[12px] mb-2 md:text-[14px] lg:mb-4">
           WHAT WE DO
         </span>
 

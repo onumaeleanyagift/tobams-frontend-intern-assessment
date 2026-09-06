@@ -1,3 +1,5 @@
+<<<<<<< Updated upstream
+=======
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import { User, ChevronDown, SquareMenu } from "lucide-react";
@@ -5,7 +7,7 @@ import { User, ChevronDown, SquareMenu } from "lucide-react";
 export default function Navbar() {
   return (
     <header className="w-full bg-white">
-      <div className="border-b border-(--border) px-2 py-4">
+      <div className="border-b border-(--footer)/10 px-2 py-4">
         <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-5 md:px-8 lg:px-10">
           <a href="/" aria-label="Tobams Group home" className="shrink-0">
             <Image
@@ -21,7 +23,7 @@ export default function Navbar() {
           <div className="hidden items-center gap-6 md:flex">
             <Button href="#account">
               <div className="flex gap-3">
-                <div className="flex h-6 w-6 items-center justify-center bg-(--border) text-(--primary) rounded-2xl">
+                <div className="flex items-center justify-center bg-(--footer)/10 text-(--primary) rounded-2xl">
                   <User size={24} strokeWidth={2} />
                 </div>
                 <div className="flex items-center gap-1">
@@ -37,7 +39,7 @@ export default function Navbar() {
           </div>
 
           <button aria-label="Open navigation menu" className="md:hidden">
-            <span className="text-(--main-text)">
+            <span className="text-(--black)">
               <SquareMenu size={32} />
             </span>
           </button>
@@ -139,3 +141,4 @@ export default function Navbar() {
     </header>
   );
 }
+>>>>>>> Stashed changes

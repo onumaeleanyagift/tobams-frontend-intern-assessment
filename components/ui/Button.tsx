@@ -14,9 +14,9 @@ export default function Button({
   href,
 }: ButtonProps) {
   const variantStyles = {
-    primary: "bg-(--primary) text-white",
-    pink: "bg-(--accent-dark) text-(--background)",
-    white: "bg-(--background) text-(--primary)",
+    primary: "bg-(--primary) text-(--white)",
+    pink: "bg-(--secondary) text-(--white)",
+    white: "bg-(--white) text-(--primary)",
   };
 
   const className = `flex items-center justify-center rounded font-semibold px-5.5 py-[11.5px] text-[14px] md:text-[18px] md:gap-2 md:h-12 md:px-6 md:py-[10.5px] ${variantStyles[variant]}`;
