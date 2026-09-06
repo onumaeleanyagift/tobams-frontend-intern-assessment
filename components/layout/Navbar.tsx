@@ -4,9 +4,12 @@ import { User, ChevronDown, SquareMenu } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <header className="w-full bg-white">
-      <div className="border-b border-(--border) px-2 py-4">
+    // Fixed navbar that stays at the top while scrolling
+    <header className="fixed top-0 left-0 z-50 w-full bg-(--white)">
+      {/* Top section containing the logo and account actions */}
+      <div className="border-b border-(--footer)/10 px-2 py-4">
         <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-5 md:px-8 lg:px-10">
+          {/* Tobams Group logo */}
           <a href="/" aria-label="Tobams Group home" className="shrink-0">
             <Image
               src="/images/Logo.svg"
@@ -18,11 +21,12 @@ export default function Navbar() {
             />
           </a>
 
+          {/* Desktop account and assessment actions */}
           <div className="hidden items-center gap-6 md:flex">
             <Button href="#account">
-              <div className="flex gap-3">
-                <div className="flex h-6 w-6 items-center justify-center bg-(--border) text-(--primary) rounded-2xl">
-                  <User size={24} strokeWidth={2} />
+              <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center w-6.5 h-6.5 p-1 bg-[#DDD0DA] text-(--primary) rounded-4xl">
+                  <User strokeWidth={2} />
                 </div>
                 <div className="flex items-center gap-1">
                   Account
@@ -36,14 +40,19 @@ export default function Navbar() {
             </Button>
           </div>
 
-          <button aria-label="Open navigation menu" className="md:hidden">
-            <span className="text-(--main-text)">
+          {/* Mobile menu button */}
+          <button
+            aria-label="Open navigation menu"
+            className="md:hidden cursor-pointer"
+          >
+            <span className="text-(--black)">
               <SquareMenu size={32} />
             </span>
           </button>
         </div>
       </div>
 
+      {/* Desktop navigation links */}
       <nav aria-label="Main navigation" className="hidden md:block">
         <div className="mx-auto flex max-w-7xl items-center justify-center px-5 pt-4 md:px-8 lg:px-10">
           <ul className="flex items-center pb-2 md:gap-5 lg:gap-8 md:text-[12px] lg:text-[18px] text-(--main-text)">
