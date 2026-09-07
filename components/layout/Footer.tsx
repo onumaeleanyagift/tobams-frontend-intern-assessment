@@ -41,7 +41,7 @@ export default function Footer() {
     <footer className="bg-(--footer) text-(--white)">
       {/* Footer CTA */}
       <section className="border-b border-[#C4C4C4] px-4 py-6 md:px-8 lg:px-10 lg:py-8">
-        <div className="mx-auto flex max-w-[1312px] flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-[1440px] flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="text-[14px] lg:text-[18px]">
               Ready to be a part of something extraordinary?
@@ -60,7 +60,7 @@ export default function Footer() {
 
       {/* Main footer */}
       <div className="px-4 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14">
-        <div className="mx-auto flex flex-col max-w-[1312px] gap-8 md:grid md:grid-cols-[1fr_auto] lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-12">
+        <div className="mx-auto flex flex-col max-w-[1440px] gap-8 md:grid md:grid-cols-[1fr_auto] lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-12">
           {/* Tobams Group information */}
           <div>
             <Image
@@ -168,8 +168,8 @@ export default function Footer() {
         </div>
 
         {/* Contact and registered offices */}
-        <div className="mt-8 border-t border-(--white)/10"></div>
-        <div className="mx-auto mt-6 max-w-[1312px] rounded-[8px] bg-(--white)/6 lg:py-4 lg:grid lg:grid-cols-[auto_auto_auto] lg:items-center">
+        <div className="mt-8 border-t border-(--white)/10 lg:hidden"></div>
+        <div className="mx-auto mt-6 max-w-[1440px] rounded-[8px] bg-(--white)/6 lg:py-4 lg:grid lg:grid-cols-[auto_auto_auto] lg:items-center">
           {/* Contact information */}
           <div className="order-1 p-4 lg:order-3 lg:border-l lg:border-(--white)/10 lg:px-5 lg:py-0">
             <h3 className="text-[18px] font-semibold md:text-[20px]">
@@ -227,7 +227,10 @@ export default function Footer() {
           <p>Copyright © Tobams Group, 2024. All rights reserved.</p>
 
           <div className="grid grid-cols-2 text-center md:flex md:flex-wrap gap-4 text-(--white) font-light md:gap-6">
-            <a href="#" className="order-3 col-span-2 justify-self-center underline md:order-1">
+            <a
+              href="#"
+              className="order-3 col-span-2 justify-self-center underline md:order-1"
+            >
               Terms and Conditions
             </a>
 
