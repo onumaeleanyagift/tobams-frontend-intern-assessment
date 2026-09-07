@@ -18,9 +18,9 @@ export default function Hero() {
       <div className="absolute inset-0 bg-(--black)/70" />
 
       {/* Hero content placed above the background and overlay */}
-      <div className="relative z-10 flex flex-col text-center items-center text-(--white) max-w-full md:h-full md:gap-3 md:px-4">
+      <div className="relative z-10 flex flex-col text-center items-center text-(--white) md:max-w-full md:h-full md:gap-3 md:px-4">
         {/* Small label above the main heading */}
-        <span className=" rounded-full bg-(--white)/10 px-8 py-2 text-[12px] mb-2 md:text-[14px] lg:mb-4">
+        <span className=" rounded-full bg-(--white)/10 px-8 py-2 text-[12px] my-2 md:text-[14px] lg:mb-4">
           WHAT WE DO
         </span>
 
@@ -30,12 +30,12 @@ export default function Hero() {
         </span>
 
         {/* Mobile heading */}
-        <span className="md:hidden text-[23.8px] font-bold pb-3.75">
+        <span className="md:hidden w-max max-w-[90vw] text-center text-[24px] font-bold pb-3.75">
           Learning and Development
         </span>
 
         {/* Short description of the services */}
-        <p className="text-[14px] md:mt-4 md:max-w-6xl md:text-[18px]">
+        <p className="text-[14px] w-max max-w-[90vw] text-center md:mt-4 md:max-w-6xl md:text-[18px]">
           Our comprehensive range of programs and resources is designed to
           enhance skills, broaden knowledge, and propel careers forward in
           today&apos;s ever-evolving landscape.
