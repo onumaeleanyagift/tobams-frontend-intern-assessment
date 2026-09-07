@@ -3,6 +3,7 @@ import Hero from "@/components/sections/Hero";
 import LearningManagement from "@/components/sections/LearningManagement";
 import TrainingServices from "@/components/sections/TrainingServices";
 import ManagementDevelopment from "@/components/sections/ManagementDevelopment";
+import TransformationHub from "@/components/sections/TransformationHub";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <LearningManagement />
         <TrainingServices />
         <ManagementDevelopment />
+        <TransformationHub />
       </main>
     </>
   );
