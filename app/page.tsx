@@ -4,6 +4,7 @@ import LearningManagement from "@/components/sections/LearningManagement";
 import TrainingServices from "@/components/sections/TrainingServices";
 import ManagementDevelopment from "@/components/sections/ManagementDevelopment";
 import TransformationHub from "@/components/sections/TransformationHub";
+import ConsultantTraining from "@/components/sections/ConsultantTraining";
 import Footer from "@/components/layout/Footer";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <TrainingServices />
         <ManagementDevelopment />
         <TransformationHub />
+        <ConsultantTraining />
       </main>
 
       <Footer />
