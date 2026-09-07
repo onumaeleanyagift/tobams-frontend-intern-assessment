@@ -6,6 +6,7 @@ import ManagementDevelopment from "@/components/sections/ManagementDevelopment";
 import TransformationHub from "@/components/sections/TransformationHub";
 import ConsultantTraining from "@/components/sections/ConsultantTraining";
 import ConsultationCTA from "@/components/sections/ConsultationCTA";
+import Testimonials from "@/components/sections/Testimonials";
 import Footer from "@/components/layout/Footer";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         <TransformationHub />
         <ConsultantTraining />
         <ConsultationCTA />
+        <Testimonials />
       </main>
 
       <Footer />
