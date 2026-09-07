@@ -60,7 +60,7 @@ export default function TransformationHub() {
                 {features.map((feature) => (
                   <li
                     key={feature}
-                    className="flex gap-2 rounded-xl bg-(--white) p-5 md:px-3 md:py-2 text-[14px] text-(--main-text) md:text-[18px]"
+                    className="flex gap-2 rounded-xl bg-(--white) p-5 md:px-3 md:py-2 text-[14px] text-(--main-text) md:items-center md:text-[18px]"
                   >
                     {/* Feature icon */}
                     <Zap
